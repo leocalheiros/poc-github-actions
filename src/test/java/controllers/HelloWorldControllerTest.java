@@ -1,4 +1,6 @@
-import com.leocalheiros.Main;
+package controllers;
+
+import com.leocalheiros.controllers.HelloWorldController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -11,10 +13,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-class ExampleTest {
+class HelloWorldControllerTest {
     private MockMvc mockMvc;
     @InjectMocks
-    private Main controller;
+    private HelloWorldController controller;
 
     @BeforeEach
     void setUp() {
