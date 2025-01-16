@@ -13,7 +13,7 @@ public class Main {
     }
 
     @GetMapping("/hello-world")
-    private String getHelloWorld(){
+    public String getHelloWorld(){
         return "Hello World";
     }
 }
