@@ -57,7 +57,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: leonardocalheiros/poc-github-actions:${{ github.sha }}
+          tags: |
+            leonardocalheiros/poc-github-actions:${{ github.sha }}
+            leonardocalheiros/poc-github-actions:latest
 
   dependency-submission:
     runs-on: ubuntu-latest
