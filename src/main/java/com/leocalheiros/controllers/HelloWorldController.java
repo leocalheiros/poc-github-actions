@@ -9,4 +9,9 @@ public class HelloWorldController {
     public String getHelloWorld(){
         return "Hello World";
     }
+
+    @GetMapping("/ping")
+    public String getPing(){
+        return "Pong";
+    }
 }
