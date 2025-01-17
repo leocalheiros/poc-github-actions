@@ -35,5 +35,9 @@ class HelloWorldControllerTest {
         mockMvc.perform(get("/hello-world"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Hello World"));
+
+        mockMvc.perform(get("/ping"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Pong"));
     }
 }
